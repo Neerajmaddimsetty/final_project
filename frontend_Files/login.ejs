@@ -1,0 +1,45 @@
+<%- include("partials/header") %>
+    <link href="/css/loginstyle.css" rel="stylesheet" type="text/css">
+    <div class="container">
+        <div id="form" class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div id="login">
+                        <h3>Login</h3>
+                        <form action="/login" method="POST">
+                            <div class="form-group">
+                                <label for="user">username</label>
+                                <input type="text" name="username" required class="form-control" id="user" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password1">Password</label>
+                                <input type="password" name="password" required class="form-control" id="Password1" placeholder="Password">
+                            </div>
+                            <button type="Login" class="btn btn-primary">LOG IN</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row" id="registration">
+                    <div id="loginform">
+                        <form action="/register" method="POST">
+                            <div class="form-group">
+                                <label for="user">username</label>
+                                <input type="text" name="username" required class="form-control" id="user" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password1">Password</label>
+                                <input type="password" name="password" required class="form-control" id="Password1" placeholder="Password">
+                            </div>
+                            <button type="Sign In" class="btn btn-primary">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <%- include("partials/footer") %>
